@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import es.rmanzanodev.myfirstcomposeapp.component.layout.MyBox
 import es.rmanzanodev.myfirstcomposeapp.component.layout.MyColumn
+import es.rmanzanodev.myfirstcomposeapp.component.layout.MyComplexLayout
 import es.rmanzanodev.myfirstcomposeapp.component.layout.MyRow
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
 import es.rmanzanodev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyRow(Modifier.padding(innerPadding))
+                    MyComplexLayout(Modifier.padding(innerPadding))
                 }
             }
         }
