@@ -15,6 +15,7 @@ import es.rmanzanodev.myfirstcomposeapp.component.layout.MyColumn
 import es.rmanzanodev.myfirstcomposeapp.component.layout.MyComplexLayout
 import es.rmanzanodev.myfirstcomposeapp.component.layout.MyComplexLayoutExercise
 import es.rmanzanodev.myfirstcomposeapp.component.layout.MyRow
+import es.rmanzanodev.myfirstcomposeapp.component.layout.MySpacer
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
 import es.rmanzanodev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyComplexLayoutExercise(Modifier.padding(innerPadding))
+                    MySpacer(Modifier.padding(innerPadding))
                 }
             }
         }
