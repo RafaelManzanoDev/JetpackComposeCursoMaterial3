@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import es.rmanzanodev.myfirstcomposeapp.component.layout.MyConstraintLayoutBarrier
 import es.rmanzanodev.myfirstcomposeapp.component.layout.MyConstraintLayoutChain
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
+import es.rmanzanodev.myfirstcomposeapp.state.MyState
 import es.rmanzanodev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyConstraintLayoutChain(Modifier.padding(innerPadding))
+                    MyState(Modifier.padding(innerPadding))
                 }
             }
         }
