@@ -10,3 +10,6 @@ Secciones del curso:
 6. Componente Button
 7. Componente Image y Icon
 8. Componente ProgressBar
+
+Documentación
+Diferencias entre Material y Material 3: https://www.jetpackcompose.pro
