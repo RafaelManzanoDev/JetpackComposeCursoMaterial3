@@ -10,14 +10,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import es.rmanzanodev.myfirstcomposeapp.component.layout.MyBasicConstraintLayout
-import es.rmanzanodev.myfirstcomposeapp.component.layout.MyBox
-import es.rmanzanodev.myfirstcomposeapp.component.layout.MyColumn
-import es.rmanzanodev.myfirstcomposeapp.component.layout.MyComplexLayout
-import es.rmanzanodev.myfirstcomposeapp.component.layout.MyComplexLayoutExercise
-import es.rmanzanodev.myfirstcomposeapp.component.layout.MyConstraintLayoutExercise
-import es.rmanzanodev.myfirstcomposeapp.component.layout.MyRow
-import es.rmanzanodev.myfirstcomposeapp.component.layout.MySpacer
+import es.rmanzanodev.myfirstcomposeapp.component.layout.MyConstraintLayoutBarrier
+import es.rmanzanodev.myfirstcomposeapp.component.layout.MyConstraintLayoutChain
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
 import es.rmanzanodev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -28,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyConstraintLayoutExercise(Modifier.padding(innerPadding))
+                    MyConstraintLayoutChain(Modifier.padding(innerPadding))
                 }
             }
         }
