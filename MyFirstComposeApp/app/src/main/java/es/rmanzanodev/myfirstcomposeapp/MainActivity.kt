@@ -10,7 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import es.rmanzanodev.myfirstcomposeapp.component.MyTextFieldAvancedParent
+import es.rmanzanodev.myfirstcomposeapp.component.text.MyTextFieldAvancedParent
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
 import es.rmanzanodev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 

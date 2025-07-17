@@ -1,4 +1,4 @@
-package es.rmanzanodev.myfirstcomposeapp.component
+package es.rmanzanodev.myfirstcomposeapp.component.text
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column

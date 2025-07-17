@@ -1,4 +1,4 @@
-package es.rmanzanodev.myfirstcomposeapp.component
+package es.rmanzanodev.myfirstcomposeapp.component.text
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
