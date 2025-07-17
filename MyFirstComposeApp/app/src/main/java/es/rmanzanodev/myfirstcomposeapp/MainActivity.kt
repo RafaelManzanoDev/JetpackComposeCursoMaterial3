@@ -10,8 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import es.rmanzanodev.myfirstcomposeapp.component.button.MyButton
-import es.rmanzanodev.myfirstcomposeapp.component.text.MyOutlinedTextFieldParent
+import es.rmanzanodev.myfirstcomposeapp.component.button.MyOutlinedButton
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
 import es.rmanzanodev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -22,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyButton(Modifier.padding(innerPadding))
+                    MyOutlinedButton(Modifier.padding(innerPadding))
                 }
             }
         }
