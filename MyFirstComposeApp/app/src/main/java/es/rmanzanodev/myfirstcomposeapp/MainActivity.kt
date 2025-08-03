@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import es.rmanzanodev.myfirstcomposeapp.component.progress.MyAdvancedProgressIndicator
+import es.rmanzanodev.myfirstcomposeapp.component.progress.MyAnimationProgressIndicator
 import es.rmanzanodev.myfirstcomposeapp.component.progress.MyCircularProgressIndicator
 import es.rmanzanodev.myfirstcomposeapp.component.progress.MyLinearProgressIndicator
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyAdvancedProgressIndicator(Modifier.padding(innerPadding))
+                    MyAnimationProgressIndicator(Modifier.padding(innerPadding))
                 }
             }
         }
