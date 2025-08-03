@@ -10,8 +10,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import es.rmanzanodev.myfirstcomposeapp.component.image.MyImageUrl
-import es.rmanzanodev.myfirstcomposeapp.component.progress.MyProgressBar
+import es.rmanzanodev.myfirstcomposeapp.component.progress.MyCircularProgressIndicator
+import es.rmanzanodev.myfirstcomposeapp.component.progress.MyLinearProgressIndicator
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
 import es.rmanzanodev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyProgressBar(Modifier.padding(innerPadding))
+                    MyLinearProgressIndicator(Modifier.padding(innerPadding))
                 }
             }
         }
