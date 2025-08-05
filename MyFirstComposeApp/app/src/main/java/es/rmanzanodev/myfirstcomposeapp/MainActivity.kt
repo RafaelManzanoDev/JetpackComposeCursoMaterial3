@@ -17,6 +17,7 @@ import es.rmanzanodev.myfirstcomposeapp.component.progress.MyLinearProgressIndic
 import es.rmanzanodev.myfirstcomposeapp.component.toggle.MyAdvancedCheckBox
 import es.rmanzanodev.myfirstcomposeapp.component.toggle.MyCheckBox
 import es.rmanzanodev.myfirstcomposeapp.component.toggle.MySwitch
+import es.rmanzanodev.myfirstcomposeapp.component.toggle.MyTriStateCheckBox
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
 import es.rmanzanodev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyAdvancedCheckBox(Modifier.padding(innerPadding))
+                    MyTriStateCheckBox(Modifier.padding(innerPadding))
                 }
             }
         }
