@@ -10,17 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import es.rmanzanodev.myfirstcomposeapp.component.progress.MyAdvancedProgressIndicator
-import es.rmanzanodev.myfirstcomposeapp.component.progress.MyAnimationProgressIndicator
-import es.rmanzanodev.myfirstcomposeapp.component.progress.MyCircularProgressIndicator
-import es.rmanzanodev.myfirstcomposeapp.component.progress.MyLinearProgressIndicator
-import es.rmanzanodev.myfirstcomposeapp.component.slider.MySlider
-import es.rmanzanodev.myfirstcomposeapp.component.toggle.MyAdvancedCheckBox
-import es.rmanzanodev.myfirstcomposeapp.component.toggle.MyAdvancedRadioButton
-import es.rmanzanodev.myfirstcomposeapp.component.toggle.MyCheckBox
-import es.rmanzanodev.myfirstcomposeapp.component.toggle.MyRadioButton
-import es.rmanzanodev.myfirstcomposeapp.component.toggle.MySwitch
-import es.rmanzanodev.myfirstcomposeapp.component.toggle.MyTriStateCheckBox
+import es.rmanzanodev.myfirstcomposeapp.component.slider.MyAdvancedSlider
 import es.rmanzanodev.myfirstcomposeapp.login.Greeting
 import es.rmanzanodev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -31,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MySlider(Modifier.padding(innerPadding))
+                    MyAdvancedSlider(Modifier.padding(innerPadding))
                 }
             }
         }
